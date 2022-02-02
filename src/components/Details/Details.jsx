@@ -1,11 +1,12 @@
 import React from 'react';
 import { Card, CardHeader, CardContent, Typography } from '@material-ui/core';
 import { Doughnut } from 'react-chartjs-2';
-import useTransactions from '../../useTransactions';
+
 
 import useStyles from './styles';
+import useTransactions from '../../useTransactions';
 
-const Details = ({ title }) => {
+const DetailsCard = ({ title }) => {
     const classes = useStyles();
     const { total, chartData } = useTransactions(title);
 
@@ -20,4 +21,4 @@ const Details = ({ title }) => {
     );
 }
 
-export default Details;
+export default DetailsCard;

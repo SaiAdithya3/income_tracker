@@ -1,3 +1,4 @@
+// import React, { useState, useEffect, useContext } from 'react';
 import React, { useContext } from 'react';
 import { Card, CardContent, Typography, Grid, Divider, CardHeader } from '@material-ui/core';
 import { ExpenseTrackerContext } from '../../context/context';
@@ -7,7 +8,7 @@ import Form from './Form/Form';
 import List from './List/List';
 import InfoCard from '../InfoCard';
 
-const Main = () => {
+const ExpenseTracker = () => {
     const classes = useStyles();
     const { balance } = useContext(ExpenseTrackerContext);
 
@@ -36,4 +37,4 @@ const Main = () => {
 }
 
 
-export default Main;
+export default ExpenseTracker;

@@ -1,12 +1,18 @@
-import React, { useEffect, useRef } from 'react';
+// import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 
-import Details from './components/Details/Details';
-import Main from './components/Main/Main';
+
+//import { Details, Main } from './components';
+ import Details from './components/Details/Details';
+ import Main from './components/Main/Main';
 import useStyles from './styles';
 
 const App = () => {
     const classes = useStyles();
+    // const main = useRef(null)
+
+    
 
     
     return (
@@ -26,7 +32,7 @@ const App = () => {
                 </Grid>
             </Grid>
         </div>
-    )
-}
+    );
+};
 
 export default App;

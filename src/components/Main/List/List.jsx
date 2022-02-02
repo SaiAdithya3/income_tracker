@@ -31,8 +31,8 @@ const List = () => {
                 </Slide>
             ))}
         </MUIList>
-    )
-}
+    );
+};
 
 
-export default List
+export default List;
